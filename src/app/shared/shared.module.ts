@@ -7,7 +7,8 @@ import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [ProfileComponent, LoginComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ],
   exports: [ProfileComponent, LoginComponent]
 })
