@@ -1,9 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tutorial</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-slides pager="true" #slides>
 
-<ion-content>
+  <ion-slide class="step-one">
+    <h1>Welcome</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat tellus 
+        in lorem varius, id interdum ex gravida. Class aptent taciti sociosqu ad litora 
+        torquent per conubia nostra, per inceptos himenaeos.
+    </p>
+    <ion-button color="dark" (click)="slides.slideNext()">Next</ion-button>
+  </ion-slide>
 
-</ion-content>
+  <ion-slide class="step-two">
+    <h1>Learn</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat tellus 
+        in lorem varius, id interdum ex gravida. Class aptent taciti sociosqu ad litora 
+        torquent per conubia nostra, per inceptos himenaeos.
+    </p>
+    <ion-button color="dark" (click)="slides.slideNext()">Next</ion-button>
+  </ion-slide>
+
+  <ion-slide class="step-three">
+    <h1>Apply</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat tellus 
+        in lorem varius, id interdum ex gravida. Class aptent taciti sociosqu ad litora 
+        torquent per conubia nostra, per inceptos himenaeos.
+    </p>
+    <ion-button color="dark" (click)="finish()">Ready!</ion-button>
+  </ion-slide>
+
+</ion-slides>
