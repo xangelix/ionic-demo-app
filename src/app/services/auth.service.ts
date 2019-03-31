@@ -55,6 +55,13 @@ export class AuthService {
     return this.db.updateAt(path, data);
   }
 
+  uid() {
+    return this.user$.pipe(
+      take(1),
+      map(u => u && u.uid)
+    ).toPromise();
+  }
+
   async signOut() {
     await this.afAuth.auth.signOut();
     return this.router.navigate(['/']);
