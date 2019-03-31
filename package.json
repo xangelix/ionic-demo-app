@@ -30,6 +30,7 @@
     "@ionic/pro": "2.0.4",
     "@ionic/storage": "^2.2.0",
     "cordova-android": "8.0.0",
+    "cordova-android-firebase-gradle-release": "^2.1.0",
     "cordova-ios": "5.0.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-firebase": "2.0.5",
@@ -87,6 +88,9 @@
       "cordova-sqlite-storage": {},
       "cordova-plugin-googleplus": {
         "REVERSED_CLIENT_ID": "com.googleusercontent.apps.847425801415-n311qsn4eod3afrgfqjsbflptfugis6j"
+      },
+      "cordova-android-firebase-gradle-release": {
+        "FIREBASE_VERSION": "15.+"
       }
     },
     "platforms": [
